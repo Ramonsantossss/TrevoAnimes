@@ -255,6 +255,53 @@
     left: 0 !important;
     opacity: 1 !important;
 }
+.inner_serach{
+    position: relative;
+}
+.Searchitems_bootm{
+    border-radius: 10px;
+
+    width: 120%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    position: absolute;
+    top: 55px;
+    z-index: 104;
+    a{
+        width: 100%;
+        margin: 5px;
+        text-decoration: none;
+        .animeSearch_menu{
+            width: 100%;
+            height: auto;
+    
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 10px;
+            img{
+                width: 40px;
+                height: 40px;
+                object-fit: cover;
+                border-radius: 15px;
+            }
+            p{
+                color: black;
+                font-family: "Roboto",sans-serif;
+                &:hover{
+                    color: #BD00FF;
+                }
+                margin-left: 10px;
+            }
+        }
+    }
+    
+}
 
 @media screen and (max-width: 1170px){
     .hamburger-react{
@@ -373,5 +420,33 @@
     }
     .Navbar_Phone{
         width: 70% !important;
+    }
+}
+@media screen and (max-width: 409px) {
+    .animeSearch_menu{
+        width: 100%;
+        height: auto;
+
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 10px;
+        img{
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+        p{
+            color: black;
+            font-family: "Roboto",sans-serif;
+            &:hover{
+                color: #BD00FF;
+            }
+            font-size: 10px;
+            margin-left: 10px;
+        }
     }
 }

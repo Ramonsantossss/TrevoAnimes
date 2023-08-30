@@ -5,9 +5,17 @@ import { Heroanime } from "./../../assets/Data.js";
 
 function Hero() {
   const [visible, setVisible] = useState(8);
+  const [viewButton, setViewButton]= useState(true)
+
   const ShowMore = () => {
-    setVisible((prevValue) => prevValue + 4);
+    if(Heroanime.length != visible ){
+      setVisible((prevValue) => prevValue + 4);
+    }
+    else{
+      setViewButton(false)
+    }
   };
+  console.log(Heroanime.length);
   return (
     <div className="Hero">
       <div className="hero_wrapper">
@@ -28,7 +36,7 @@ function Hero() {
           );
         })}
       </div>
-      <button onClick={ShowMore} className="Viewmore">
+      <button onClick={ShowMore} className={Heroanime.length != visible?"Viewmore":"displaynonebutton"}>
         View more
       </button>
     </div>

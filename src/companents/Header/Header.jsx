@@ -18,10 +18,11 @@ function Header() {
   const progressContent = useRef(null);
   const onAutoplayTimeLeft = (s, time, progress) => {
     progressCircle.current.style.setProperty("--progress", 1 - progress);
-    progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
+    progressContent.current.textContent = `${Math.ceil(time / 6000)}s`;
   };
   return (
     <div>
+      
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
