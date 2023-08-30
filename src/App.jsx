@@ -1,22 +1,23 @@
-import React from 'react'
+import React from "react";
 
-import './App.scss'
-import Home from './pages/Home/Home'
-import Navbar from './companents/Navbar/Navbar'
-import { Route, Routes } from 'react-router-dom'
+import "./App.scss";
+import Home from "./pages/Home/Home";
+import Navbar from "./companents/Navbar/Navbar";
+import { Route, Routes } from "react-router-dom";
+import Footer from "./companents/Footer/Footer";
 
 function App() {
-
   return (
-   <React.Fragment>
+    <React.Fragment>
       <div className="App">
-        <Navbar/>
+        <Navbar />
         <Routes>
-          <Route path={"/"} element={<Home/>} />
+          <Route path={"/"} element={<Home />} />
         </Routes>
+        <Footer />
       </div>
-   </React.Fragment>
-  )
+    </React.Fragment>
+  );
 }
 
-export default App
+export default App;

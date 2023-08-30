@@ -1,0 +1,27 @@
+.Footer{
+    width: 100%;
+    padding: 1.5rem 1rem;
+   
+    background: rgb(20, 16, 16);
+
+
+
+    
+    a{
+        text-align: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-decoration: none;
+        span{
+            color: #FCFCFC;
+            font-family: 'Aubrey', cursive;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-left: 9px;
+    
+        }
+    }
+}
